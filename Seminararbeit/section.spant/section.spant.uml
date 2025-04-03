@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:dc43Utilities="http://www.iils.de/dc43/profile/dc43Utilities/v0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_fmkWcBqcEe2rTc1FG_Vrxg" name="section.spant">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_fu394BqcEe2rTc1FG_Vrxg">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/units.uml#_SiA1IPeDEeaEoaRE-ZlJKw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_qF2_0BqcEe2rTc1FG_Vrxg">
+      <importedPackage xmi:type="uml:Model" href="../section/section.uml#_YQKZgHcdEeyiW_BUzrG0Pg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fmkWcRqcEe2rTc1FG_Vrxg" name="Classes" visibility="public"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fmkWchqcEe2rTc1FG_Vrxg" name="Rules"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_fmkWcxqcEe2rTc1FG_Vrxg" name="Programs">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_fmkWdBqcEe2rTc1FG_Vrxg" name="RootProgram" node="_fmkWdRqcEe2rTc1FG_Vrxg _fmkWdhqcEe2rTc1FG_Vrxg _-igDIBqcEe2rTc1FG_Vrxg">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_C2Ms8BqdEe2rTc1FG_Vrxg" name="ActivitySpant" node="_C2Ms8RqdEe2rTc1FG_Vrxg _C2Ms8hqdEe2rTc1FG_Vrxg _FogcgBqdEe2rTc1FG_Vrxg">
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_I62XABqdEe2rTc1FG_Vrxg" name="Main" node="_I62XARqdEe2rTc1FG_Vrxg _I62XAhqdEe2rTc1FG_Vrxg _xTNbQB2lEe2Nw8dlDtEexQ">
+            <edge xmi:type="uml:ControlFlow" xmi:id="_Ne6_IBqdEe2rTc1FG_Vrxg" name="start -> CreateSpant" target="_xTNbQB2lEe2Nw8dlDtEexQ" source="_I62XARqdEe2rTc1FG_Vrxg"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_zqbKQB2lEe2Nw8dlDtEexQ" name="CreateSpant -> final" target="_I62XAhqdEe2rTc1FG_Vrxg" source="_xTNbQB2lEe2Nw8dlDtEexQ"/>
+            <node xmi:type="uml:InitialNode" xmi:id="_I62XARqdEe2rTc1FG_Vrxg" name="start" outgoing="_Ne6_IBqdEe2rTc1FG_Vrxg"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="_I62XAhqdEe2rTc1FG_Vrxg" name="final" incoming="_zqbKQB2lEe2Nw8dlDtEexQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_xTNbQB2lEe2Nw8dlDtEexQ" name="CreateSpant" incoming="_Ne6_IBqdEe2rTc1FG_Vrxg" outgoing="_zqbKQB2lEe2Nw8dlDtEexQ"/>
+          </ownedBehavior>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_Fo2awBqdEe2rTc1FG_Vrxg" name="start -> Main" target="_FogcgBqdEe2rTc1FG_Vrxg" source="_C2Ms8RqdEe2rTc1FG_Vrxg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_HgsGIBqdEe2rTc1FG_Vrxg" name="Main -> final" target="_C2Ms8hqdEe2rTc1FG_Vrxg" source="_FogcgBqdEe2rTc1FG_Vrxg"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_C2Ms8RqdEe2rTc1FG_Vrxg" name="start" outgoing="_Fo2awBqdEe2rTc1FG_Vrxg"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_C2Ms8hqdEe2rTc1FG_Vrxg" name="final" incoming="_HgsGIBqdEe2rTc1FG_Vrxg"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_FogcgBqdEe2rTc1FG_Vrxg" name="Main" incoming="_Fo2awBqdEe2rTc1FG_Vrxg" outgoing="_HgsGIBqdEe2rTc1FG_Vrxg" behavior="_I62XABqdEe2rTc1FG_Vrxg"/>
+        </ownedBehavior>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_-i2BYBqcEe2rTc1FG_Vrxg" name="start -> ActivitySpant" target="_-igDIBqcEe2rTc1FG_Vrxg" source="_fmkWdRqcEe2rTc1FG_Vrxg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_AiJmsBqdEe2rTc1FG_Vrxg" name="ActivitySpant -> final" target="_fmkWdhqcEe2rTc1FG_Vrxg" source="_-igDIBqcEe2rTc1FG_Vrxg"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_fmkWdRqcEe2rTc1FG_Vrxg" name="start" outgoing="_-i2BYBqcEe2rTc1FG_Vrxg"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_fmkWdhqcEe2rTc1FG_Vrxg" name="final" incoming="_AiJmsBqdEe2rTc1FG_Vrxg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_-igDIBqcEe2rTc1FG_Vrxg" name="ActivitySpant" incoming="_-i2BYBqcEe2rTc1FG_Vrxg" outgoing="_AiJmsBqdEe2rTc1FG_Vrxg" behavior="_C2Ms8BqdEe2rTc1FG_Vrxg"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_NeAZIBqdEe2rTc1FG_Vrxg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_NeEqkBqdEe2rTc1FG_Vrxg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.iils.de/dc43/profile/dc43Utilities/v0#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/dc43Utilities.profile.uml#_U1HE8Fy0Ed6NvKf1SxOu9A"/>
+      </profileApplication>
+    </packagedElement>
+  </uml:Model>
+  <dc43Utilities:javaRule xmi:id="_xT-QQB2lEe2Nw8dlDtEexQ" rule="CreateSpant" base_OpaqueAction="_xTNbQB2lEe2Nw8dlDtEexQ"/>
+</xmi:XMI>

@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: section.stringerCoupling;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: DC43
+Export-Package: section.stringerCoupling,
+ section.stringerCoupling.impl
+Require-Bundle: de.iils.dc43.core.dependencies,
+ section;visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: section.stringerCoupling
+Import-Package: de.ifb.pigroup.geometry.brep.elements,
+ javax.annotation
+Bundle-DC43: true

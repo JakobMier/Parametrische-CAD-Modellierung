@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+<extension
+      point="org.eclipse.emf.ecore.generated_package">
+   <package
+         class="section.stringer.impl.StringerPackageImpl"
+         uri="http://iils.de/dc43/section.stringer">
+   </package>
+</extension>
+</plugin>

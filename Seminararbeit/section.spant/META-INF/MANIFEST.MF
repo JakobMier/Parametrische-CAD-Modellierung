@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: section.spant;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: DC43
+Export-Package: section.spant,
+ section.spant.impl
+Require-Bundle: de.iils.dc43.core.dependencies,
+ section;visibility:=reexport,
+ de.iils.dc43.core.geometry.legacy
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: section.spant
+Import-Package: de.ifb.pigroup.geometry.brep.elements,
+ javax.annotation
+Bundle-DC43: true

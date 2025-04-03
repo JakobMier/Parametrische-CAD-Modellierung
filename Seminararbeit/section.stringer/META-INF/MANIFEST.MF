@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: section.stringer;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: DC43
+Export-Package: section.stringer,
+ section.stringer.impl
+Require-Bundle: de.iils.dc43.core.dependencies,
+ section;visibility:=reexport,
+ de.iils.dc43.core.geometry.legacy
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: section.stringer
+Import-Package: de.ifb.pigroup.geometry.brep.elements,
+ javax.annotation
+Bundle-DC43: true

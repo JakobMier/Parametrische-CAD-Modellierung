@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:dc43Utilities="http://www.iils.de/dc43/profile/dc43Utilities/v0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_lDmQsNScEey5Bcdv1E9KmQ" name="section.stringer">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_lOpDENScEey5Bcdv1E9KmQ">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/units.uml#_SiA1IPeDEeaEoaRE-ZlJKw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_CneBcNShEeyu4pJhRW91MA">
+      <importedPackage xmi:type="uml:Model" href="../section/section.uml#_YQKZgHcdEeyiW_BUzrG0Pg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lDmQsdScEey5Bcdv1E9KmQ" name="Classes" visibility="public"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lDmQstScEey5Bcdv1E9KmQ" name="Rules"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_lDmQs9ScEey5Bcdv1E9KmQ" name="Programs">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_lDmQtNScEey5Bcdv1E9KmQ" name="RootProgram" node="_lDmQtdScEey5Bcdv1E9KmQ _lDmQttScEey5Bcdv1E9KmQ _FIBSoNShEeyu4pJhRW91MA">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_JUJ74NShEeyu4pJhRW91MA" name="ActivityStringer" node="_JUJ74dShEeyu4pJhRW91MA _JUJ74tShEeyu4pJhRW91MA _J66Z4NShEeyu4pJhRW91MA">
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_LLpB8NShEeyu4pJhRW91MA" name="Main" node="_LLpB8dShEeyu4pJhRW91MA _LLpB8tShEeyu4pJhRW91MA _K18QoHV0Ee2PRKuHxWnvhQ _FYrPUHV3Ee2PRKuHxWnvhQ">
+            <edge xmi:type="uml:ControlFlow" xmi:id="_dECKYNSiEeyu4pJhRW91MA" name="start -> CreateStringerProfile" target="_FYrPUHV3Ee2PRKuHxWnvhQ" source="_LLpB8dShEeyu4pJhRW91MA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_K3UJoHV0Ee2PRKuHxWnvhQ" name="CreateStringerProfile -> CreateStringer" target="_K18QoHV0Ee2PRKuHxWnvhQ" source="_FYrPUHV3Ee2PRKuHxWnvhQ"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_PaI0kHV0Ee2PRKuHxWnvhQ" name="CreateStringer -> final" target="_LLpB8tShEeyu4pJhRW91MA" source="_K18QoHV0Ee2PRKuHxWnvhQ"/>
+            <node xmi:type="uml:InitialNode" xmi:id="_LLpB8dShEeyu4pJhRW91MA" name="start" outgoing="_dECKYNSiEeyu4pJhRW91MA"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="_LLpB8tShEeyu4pJhRW91MA" name="final" incoming="_PaI0kHV0Ee2PRKuHxWnvhQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_K18QoHV0Ee2PRKuHxWnvhQ" name="CreateStringer" incoming="_K3UJoHV0Ee2PRKuHxWnvhQ" outgoing="_PaI0kHV0Ee2PRKuHxWnvhQ"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_FYrPUHV3Ee2PRKuHxWnvhQ" name="CreateStringerProfile" incoming="_dECKYNSiEeyu4pJhRW91MA" outgoing="_K3UJoHV0Ee2PRKuHxWnvhQ"/>
+          </ownedBehavior>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_J7XF0NShEeyu4pJhRW91MA" name="start -> Main" target="_J66Z4NShEeyu4pJhRW91MA" source="_JUJ74dShEeyu4pJhRW91MA"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_KwQGcNShEeyu4pJhRW91MA" name="Main -> final" target="_JUJ74tShEeyu4pJhRW91MA" source="_J66Z4NShEeyu4pJhRW91MA"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_JUJ74dShEeyu4pJhRW91MA" name="start" outgoing="_J7XF0NShEeyu4pJhRW91MA"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_JUJ74tShEeyu4pJhRW91MA" name="final" incoming="_KwQGcNShEeyu4pJhRW91MA"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_J66Z4NShEeyu4pJhRW91MA" name="Main" incoming="_J7XF0NShEeyu4pJhRW91MA" outgoing="_KwQGcNShEeyu4pJhRW91MA" behavior="_LLpB8NShEeyu4pJhRW91MA"/>
+        </ownedBehavior>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_FJCmUNShEeyu4pJhRW91MA" name="start -> ActivityStringer" target="_FIBSoNShEeyu4pJhRW91MA" source="_lDmQtdScEey5Bcdv1E9KmQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_HXc-oNShEeyu4pJhRW91MA" name="ActivityStringer -> final" target="_lDmQttScEey5Bcdv1E9KmQ" source="_FIBSoNShEeyu4pJhRW91MA"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_lDmQtdScEey5Bcdv1E9KmQ" name="start" outgoing="_FJCmUNShEeyu4pJhRW91MA"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_lDmQttScEey5Bcdv1E9KmQ" name="final" incoming="_HXc-oNShEeyu4pJhRW91MA"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_FIBSoNShEeyu4pJhRW91MA" name="ActivityStringer" incoming="_FJCmUNShEeyu4pJhRW91MA" outgoing="_HXc-oNShEeyu4pJhRW91MA" behavior="_JUJ74NShEeyu4pJhRW91MA"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_ZUXasNSiEeyu4pJhRW91MA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ZUbFENSiEeyu4pJhRW91MA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.iils.de/dc43/profile/dc43Utilities/v0#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/dc43Utilities.profile.uml#_U1HE8Fy0Ed6NvKf1SxOu9A"/>
+      </profileApplication>
+    </packagedElement>
+  </uml:Model>
+  <dc43Utilities:javaRule xmi:id="_K2wI8HV0Ee2PRKuHxWnvhQ" rule="CreateStringer" base_OpaqueAction="_K18QoHV0Ee2PRKuHxWnvhQ"/>
+  <dc43Utilities:javaRule xmi:id="_FZV9sHV3Ee2PRKuHxWnvhQ" rule="CreateStringerProfile" base_OpaqueAction="_FYrPUHV3Ee2PRKuHxWnvhQ"/>
+</xmi:XMI>

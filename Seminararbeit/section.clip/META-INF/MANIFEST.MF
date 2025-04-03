@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: section.clip;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: DC43
+Export-Package: section.clip,
+ section.clip.impl
+Require-Bundle: de.iils.dc43.core.dependencies,
+ section;visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: section.clip
+Import-Package: de.ifb.pigroup.geometry.brep.elements,
+ de.ifb.pigroup.geometry.brep.exception,
+ javax.annotation
+Bundle-DC43: true

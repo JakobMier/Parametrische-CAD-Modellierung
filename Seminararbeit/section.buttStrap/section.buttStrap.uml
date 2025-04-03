@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:dc43Utilities="http://www.iils.de/dc43/profile/dc43Utilities/v0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_Wo7kUEPhEe205-jhN9LqUg" name="section.buttStrap">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_W4BwQEPhEe205-jhN9LqUg">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/units.uml#_SiA1IPeDEeaEoaRE-ZlJKw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_cj8xQEPhEe205-jhN9LqUg">
+      <importedPackage xmi:type="uml:Model" href="../section/section.uml#_YQKZgHcdEeyiW_BUzrG0Pg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Wo8LYEPhEe205-jhN9LqUg" name="Classes" visibility="public"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Wo8LYUPhEe205-jhN9LqUg" name="Rules"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Wo8LYkPhEe205-jhN9LqUg" name="Programs">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_Wo8LY0PhEe205-jhN9LqUg" name="RootProgram" node="_Wo8LZEPhEe205-jhN9LqUg _Wo8LZUPhEe205-jhN9LqUg _nN7LMEPiEe205-jhN9LqUg">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_rnGx8EPiEe205-jhN9LqUg" name="ActivityButtStrap" node="_rnGx8UPiEe205-jhN9LqUg _rnGx8kPiEe205-jhN9LqUg _cjB3kEXLEe276av-E2YBaA">
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_d8aFUEXLEe276av-E2YBaA" name="Main" node="_d8aFUUXLEe276av-E2YBaA _d8aFUkXLEe276av-E2YBaA _eR-ssEXLEe276av-E2YBaA">
+            <edge xmi:type="uml:ControlFlow" xmi:id="_eStFcEXLEe276av-E2YBaA" name="start -> CreateButtStraps" target="_eR-ssEXLEe276av-E2YBaA" source="_d8aFUUXLEe276av-E2YBaA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_g_0zAEXLEe276av-E2YBaA" name="CreateButtStraps -> final" target="_d8aFUkXLEe276av-E2YBaA" source="_eR-ssEXLEe276av-E2YBaA"/>
+            <node xmi:type="uml:InitialNode" xmi:id="_d8aFUUXLEe276av-E2YBaA" name="start" outgoing="_eStFcEXLEe276av-E2YBaA"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="_d8aFUkXLEe276av-E2YBaA" name="final" incoming="_g_0zAEXLEe276av-E2YBaA"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_eR-ssEXLEe276av-E2YBaA" name="CreateButtStraps" incoming="_eStFcEXLEe276av-E2YBaA" outgoing="_g_0zAEXLEe276av-E2YBaA"/>
+          </ownedBehavior>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_ckAH8EXLEe276av-E2YBaA" name="start -> Main" target="_cjB3kEXLEe276av-E2YBaA" source="_rnGx8UPiEe205-jhN9LqUg"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_dUiNAEXLEe276av-E2YBaA" name="Main -> final" target="_rnGx8kPiEe205-jhN9LqUg" source="_cjB3kEXLEe276av-E2YBaA"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_rnGx8UPiEe205-jhN9LqUg" name="start" outgoing="_ckAH8EXLEe276av-E2YBaA"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_rnGx8kPiEe205-jhN9LqUg" name="final" incoming="_dUiNAEXLEe276av-E2YBaA"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_cjB3kEXLEe276av-E2YBaA" name="Main" incoming="_ckAH8EXLEe276av-E2YBaA" outgoing="_dUiNAEXLEe276av-E2YBaA" behavior="_d8aFUEXLEe276av-E2YBaA"/>
+        </ownedBehavior>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_nOWB8EPiEe205-jhN9LqUg" name="start -> ActivityButtStrap" target="_nN7LMEPiEe205-jhN9LqUg" source="_Wo8LZEPhEe205-jhN9LqUg"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_rE6D0EPiEe205-jhN9LqUg" name="ActivityButtStrap -> final" target="_Wo8LZUPhEe205-jhN9LqUg" source="_nN7LMEPiEe205-jhN9LqUg"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_Wo8LZEPhEe205-jhN9LqUg" name="start" outgoing="_nOWB8EPiEe205-jhN9LqUg"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_Wo8LZUPhEe205-jhN9LqUg" name="final" incoming="_rE6D0EPiEe205-jhN9LqUg"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_nN7LMEPiEe205-jhN9LqUg" name="ActivityButtStrap" incoming="_nOWB8EPiEe205-jhN9LqUg" outgoing="_rE6D0EPiEe205-jhN9LqUg" behavior="_rnGx8EPiEe205-jhN9LqUg"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_t2-i0EPiEe205-jhN9LqUg">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_t3C0QEPiEe205-jhN9LqUg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.iils.de/dc43/profile/dc43Utilities/v0#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/dc43Utilities.profile.uml#_U1HE8Fy0Ed6NvKf1SxOu9A"/>
+      </profileApplication>
+    </packagedElement>
+  </uml:Model>
+  <dc43Utilities:javaRule xmi:id="_eSVSAEXLEe276av-E2YBaA" rule="CreateButtStraps" base_OpaqueAction="_eR-ssEXLEe276av-E2YBaA"/>
+</xmi:XMI>

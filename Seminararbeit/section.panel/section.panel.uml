@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:dc43Utilities="http://www.iils.de/dc43/profile/dc43Utilities/v0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_-1-c0Hr7Eey9TvliPEBwZA" name="section.panel">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_-7PXUHr7Eey9TvliPEBwZA">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/units.uml#_SiA1IPeDEeaEoaRE-ZlJKw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_nCMzsHr9Eey9TvliPEBwZA">
+      <importedPackage xmi:type="uml:Model" href="../section/section.uml#_YQKZgHcdEeyiW_BUzrG0Pg"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_Ow_4EMPXEey2nP-zrj-5gA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://GEOMETRY_CLASSES/de.iils.dc43.core.geometry.uml#_KtBHIPbREeezao3MgROMaw"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-1-c0Xr7Eey9TvliPEBwZA" name="Classes" visibility="public"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-1-c0nr7Eey9TvliPEBwZA" name="Rules"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_-1-c03r7Eey9TvliPEBwZA" name="Programs">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_-1-c1Hr7Eey9TvliPEBwZA" name="RootProgram" node="_-1-c1Xr7Eey9TvliPEBwZA _-1-c1nr7Eey9TvliPEBwZA _GZRAYHsCEey9TvliPEBwZA">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_ImbbgHsCEey9TvliPEBwZA" name="ActivityPanel" node="_ImbbgXsCEey9TvliPEBwZA _ImbbgnsCEey9TvliPEBwZA _JBe_0HsCEey9TvliPEBwZA">
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_KUT5oHsCEey9TvliPEBwZA" name="Main" node="_KUT5oXsCEey9TvliPEBwZA _KUT5onsCEey9TvliPEBwZA _XFO00HzDEe2rGf9dwFJ55Q">
+            <edge xmi:type="uml:ControlFlow" xmi:id="_py-f8HsCEey9TvliPEBwZA" name="CreatePanels -> final" target="_KUT5onsCEey9TvliPEBwZA" source="_XFO00HzDEe2rGf9dwFJ55Q"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_IMESAMQEEeyNGKO-jD2nkg" name="start -> CreatePanels" target="_XFO00HzDEe2rGf9dwFJ55Q" source="_KUT5oXsCEey9TvliPEBwZA"/>
+            <node xmi:type="uml:InitialNode" xmi:id="_KUT5oXsCEey9TvliPEBwZA" name="start" outgoing="_IMESAMQEEeyNGKO-jD2nkg"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="_KUT5onsCEey9TvliPEBwZA" name="final" incoming="_py-f8HsCEey9TvliPEBwZA"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_XFO00HzDEe2rGf9dwFJ55Q" name="CreatePanels" incoming="_IMESAMQEEeyNGKO-jD2nkg" outgoing="_py-f8HsCEey9TvliPEBwZA"/>
+          </ownedBehavior>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_JBrNEHsCEey9TvliPEBwZA" name="start -> Main" target="_JBe_0HsCEey9TvliPEBwZA" source="_ImbbgXsCEey9TvliPEBwZA"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_JyHykHsCEey9TvliPEBwZA" name="Main -> final" target="_ImbbgnsCEey9TvliPEBwZA" source="_JBe_0HsCEey9TvliPEBwZA"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_ImbbgXsCEey9TvliPEBwZA" name="start" outgoing="_JBrNEHsCEey9TvliPEBwZA"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_ImbbgnsCEey9TvliPEBwZA" name="final" incoming="_JyHykHsCEey9TvliPEBwZA"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_JBe_0HsCEey9TvliPEBwZA" name="Main" incoming="_JBrNEHsCEey9TvliPEBwZA" outgoing="_JyHykHsCEey9TvliPEBwZA" behavior="_KUT5oHsCEey9TvliPEBwZA"/>
+        </ownedBehavior>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_GZd0sHsCEey9TvliPEBwZA" name="start -> ActivityPanel" target="_GZRAYHsCEey9TvliPEBwZA" source="_-1-c1Xr7Eey9TvliPEBwZA"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_IdKKwHsCEey9TvliPEBwZA" name="ActivityPanel -> final" target="_-1-c1nr7Eey9TvliPEBwZA" source="_GZRAYHsCEey9TvliPEBwZA"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_-1-c1Xr7Eey9TvliPEBwZA" name="start" outgoing="_GZd0sHsCEey9TvliPEBwZA"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_-1-c1nr7Eey9TvliPEBwZA" name="final" incoming="_IdKKwHsCEey9TvliPEBwZA"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_GZRAYHsCEey9TvliPEBwZA" name="ActivityPanel" incoming="_GZd0sHsCEey9TvliPEBwZA" outgoing="_IdKKwHsCEey9TvliPEBwZA" behavior="_ImbbgHsCEey9TvliPEBwZA"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_nMkeYHsCEey9TvliPEBwZA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_nMkeYXsCEey9TvliPEBwZA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.iils.de/dc43/profile/dc43Utilities/v0#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/dc43Utilities.profile.uml#_U1HE8Fy0Ed6NvKf1SxOu9A"/>
+      </profileApplication>
+    </packagedElement>
+  </uml:Model>
+  <dc43Utilities:javaRule xmi:id="_XGRWoHzDEe2rGf9dwFJ55Q" rule="CreatePanels" base_OpaqueAction="_XFO00HzDEe2rGf9dwFJ55Q"/>
+</xmi:XMI>

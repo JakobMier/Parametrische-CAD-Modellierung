@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:dc43Utilities="http://www.iils.de/dc43/profile/dc43Utilities/v0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_GlW3YDLoEe2OlMDO45r_Pw" name="section.clip">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_GzR-oDLoEe2OlMDO45r_Pw">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/units.uml#_SiA1IPeDEeaEoaRE-ZlJKw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_VECHcDLoEe2OlMDO45r_Pw">
+      <importedPackage xmi:type="uml:Model" href="../section/section.uml#_YQKZgHcdEeyiW_BUzrG0Pg"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_GlW3YTLoEe2OlMDO45r_Pw" name="Classes" visibility="public"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_GlW3YjLoEe2OlMDO45r_Pw" name="Rules"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_GlW3YzLoEe2OlMDO45r_Pw" name="Programs">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_GlW3ZDLoEe2OlMDO45r_Pw" name="RootProgram" node="_GlW3ZTLoEe2OlMDO45r_Pw _GlW3ZjLoEe2OlMDO45r_Pw _cK1LADLoEe2OlMDO45r_Pw">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_fdaWEDLoEe2OlMDO45r_Pw" name="ActivityClip" node="_fdaWETLoEe2OlMDO45r_Pw _fdaWEjLoEe2OlMDO45r_Pw _fxXM0DLoEe2OlMDO45r_Pw">
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_hNXQwDLoEe2OlMDO45r_Pw" name="Main" node="_hNXQwTLoEe2OlMDO45r_Pw _hNXQwjLoEe2OlMDO45r_Pw _D9B4UDLqEe2OlMDO45r_Pw">
+            <edge xmi:type="uml:ControlFlow" xmi:id="_EBdFUDLqEe2OlMDO45r_Pw" name="start -> CreateClips" target="_D9B4UDLqEe2OlMDO45r_Pw" source="_hNXQwTLoEe2OlMDO45r_Pw"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_FtRG4DLqEe2OlMDO45r_Pw" name="CreateClips -> final" target="_hNXQwjLoEe2OlMDO45r_Pw" source="_D9B4UDLqEe2OlMDO45r_Pw"/>
+            <node xmi:type="uml:InitialNode" xmi:id="_hNXQwTLoEe2OlMDO45r_Pw" name="start" outgoing="_EBdFUDLqEe2OlMDO45r_Pw"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="_hNXQwjLoEe2OlMDO45r_Pw" name="final" incoming="_FtRG4DLqEe2OlMDO45r_Pw"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_D9B4UDLqEe2OlMDO45r_Pw" name="CreateClips" incoming="_EBdFUDLqEe2OlMDO45r_Pw" outgoing="_FtRG4DLqEe2OlMDO45r_Pw"/>
+          </ownedBehavior>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_fxskADLoEe2OlMDO45r_Pw" name="start -> Main" target="_fxXM0DLoEe2OlMDO45r_Pw" source="_fdaWETLoEe2OlMDO45r_Pw"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_gwyCcDLoEe2OlMDO45r_Pw" name="Main -> final" target="_fdaWEjLoEe2OlMDO45r_Pw" source="_fxXM0DLoEe2OlMDO45r_Pw"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_fdaWETLoEe2OlMDO45r_Pw" name="start" outgoing="_fxskADLoEe2OlMDO45r_Pw"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_fdaWEjLoEe2OlMDO45r_Pw" name="final" incoming="_gwyCcDLoEe2OlMDO45r_Pw"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_fxXM0DLoEe2OlMDO45r_Pw" name="Main" incoming="_fxskADLoEe2OlMDO45r_Pw" outgoing="_gwyCcDLoEe2OlMDO45r_Pw" behavior="_hNXQwDLoEe2OlMDO45r_Pw"/>
+        </ownedBehavior>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_cLYkoDLoEe2OlMDO45r_Pw" name="start -> ActivityClip" target="_cK1LADLoEe2OlMDO45r_Pw" source="_GlW3ZTLoEe2OlMDO45r_Pw"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_fSNysDLoEe2OlMDO45r_Pw" name="ActivityClip -> final" target="_GlW3ZjLoEe2OlMDO45r_Pw" source="_cK1LADLoEe2OlMDO45r_Pw"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_GlW3ZTLoEe2OlMDO45r_Pw" name="start" outgoing="_cLYkoDLoEe2OlMDO45r_Pw"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_GlW3ZjLoEe2OlMDO45r_Pw" name="final" incoming="_fSNysDLoEe2OlMDO45r_Pw"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_cK1LADLoEe2OlMDO45r_Pw" name="ActivityClip" incoming="_cLYkoDLoEe2OlMDO45r_Pw" outgoing="_fSNysDLoEe2OlMDO45r_Pw" behavior="_fdaWEDLoEe2OlMDO45r_Pw"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_D9vC8DLqEe2OlMDO45r_Pw">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D9z7cDLqEe2OlMDO45r_Pw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.iils.de/dc43/profile/dc43Utilities/v0#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/dc43Utilities.profile.uml#_U1HE8Fy0Ed6NvKf1SxOu9A"/>
+      </profileApplication>
+    </packagedElement>
+  </uml:Model>
+  <dc43Utilities:javaRule xmi:id="_EA2oYDLqEe2OlMDO45r_Pw" rule="CreateClips" base_OpaqueAction="_D9B4UDLqEe2OlMDO45r_Pw"/>
+</xmi:XMI>

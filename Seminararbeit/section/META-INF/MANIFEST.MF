@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: section;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: DC43
+Export-Package: section,
+ section.impl
+Require-Bundle: de.iils.dc43.core.dependencies,
+ de.iils.dc43.core.geometry.legacy;visibility:=reexport
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: section
+Import-Package: de.ifb.pigroup.geometry.brep.elements,
+ de.iils.dc43.core.geometry.publication,
+ javax.annotation
+Bundle-DC43: true

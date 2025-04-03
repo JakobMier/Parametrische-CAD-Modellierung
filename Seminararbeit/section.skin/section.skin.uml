@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:dc43Utilities="http://www.iils.de/dc43/profile/dc43Utilities/v0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_ikegoHr8Eey9TvliPEBwZA" name="section.skin">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_iqTb0Hr8Eey9TvliPEBwZA">
+      <importedPackage xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/units.uml#_SiA1IPeDEeaEoaRE-ZlJKw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_wxkcAHr9Eey9TvliPEBwZA">
+      <importedPackage xmi:type="uml:Model" href="../section/section.uml#_YQKZgHcdEeyiW_BUzrG0Pg"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_jMfkEHsWEeybePDxQqoCJA">
+      <importedPackage xmi:type="uml:Model" href="pathmap://GEOMETRY_CLASSES/de.iils.dc43.core.geometry.uml#_KtBHIPbREeezao3MgROMaw"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_pp6BYItGEey3TIDRY2wohw">
+      <importedPackage xmi:type="uml:Model" href="../de.ifb.pigroup.geometry.brep/de.ifb.pigroup.geometry.brep.uml#_8BFn0BifEemcP9sav_Fn0A"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ikegoXr8Eey9TvliPEBwZA" name="Classes" visibility="public"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ikegonr8Eey9TvliPEBwZA" name="Rules"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_ikego3r8Eey9TvliPEBwZA" name="Programs">
+      <packagedElement xmi:type="uml:Activity" xmi:id="_ikegpHr8Eey9TvliPEBwZA" name="RootProgram" node="_ikegpXr8Eey9TvliPEBwZA _ikegpnr8Eey9TvliPEBwZA _dpMAcHr-Eey9TvliPEBwZA">
+        <ownedBehavior xmi:type="uml:Activity" xmi:id="_q28bMHr-Eey9TvliPEBwZA" name="ActivitySkin" node="_q28bMXr-Eey9TvliPEBwZA _q28bMnr-Eey9TvliPEBwZA _f6X4kHsBEey9TvliPEBwZA">
+          <ownedBehavior xmi:type="uml:Activity" xmi:id="_pQFqwHsBEey9TvliPEBwZA" name="Main" node="_pQFqwXsBEey9TvliPEBwZA _pQFqwnsBEey9TvliPEBwZA _m3jeEHzDEe2rGf9dwFJ55Q">
+            <edge xmi:type="uml:ControlFlow" xmi:id="_p6Yk8HsBEey9TvliPEBwZA" name="start -> CreateSkin" target="_m3jeEHzDEe2rGf9dwFJ55Q" source="_pQFqwXsBEey9TvliPEBwZA"/>
+            <edge xmi:type="uml:ControlFlow" xmi:id="_626cwItCEey3TIDRY2wohw" name="CreateSkin -> final" target="_pQFqwnsBEey9TvliPEBwZA" source="_m3jeEHzDEe2rGf9dwFJ55Q"/>
+            <node xmi:type="uml:InitialNode" xmi:id="_pQFqwXsBEey9TvliPEBwZA" name="start" outgoing="_p6Yk8HsBEey9TvliPEBwZA"/>
+            <node xmi:type="uml:ActivityFinalNode" xmi:id="_pQFqwnsBEey9TvliPEBwZA" name="final" incoming="_626cwItCEey3TIDRY2wohw"/>
+            <node xmi:type="uml:OpaqueAction" xmi:id="_m3jeEHzDEe2rGf9dwFJ55Q" name="CreateSkin" incoming="_p6Yk8HsBEey9TvliPEBwZA" outgoing="_626cwItCEey3TIDRY2wohw"/>
+          </ownedBehavior>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_sgtOUHr-Eey9TvliPEBwZA" name="start -> Main" target="_f6X4kHsBEey9TvliPEBwZA" source="_q28bMXr-Eey9TvliPEBwZA"/>
+          <edge xmi:type="uml:ControlFlow" xmi:id="_vvZX4Hr-Eey9TvliPEBwZA" name="Main -> final" target="_q28bMnr-Eey9TvliPEBwZA" source="_f6X4kHsBEey9TvliPEBwZA"/>
+          <node xmi:type="uml:InitialNode" xmi:id="_q28bMXr-Eey9TvliPEBwZA" name="start" outgoing="_sgtOUHr-Eey9TvliPEBwZA"/>
+          <node xmi:type="uml:ActivityFinalNode" xmi:id="_q28bMnr-Eey9TvliPEBwZA" name="final" incoming="_vvZX4Hr-Eey9TvliPEBwZA"/>
+          <node xmi:type="uml:CallBehaviorAction" xmi:id="_f6X4kHsBEey9TvliPEBwZA" name="Main" incoming="_sgtOUHr-Eey9TvliPEBwZA" outgoing="_vvZX4Hr-Eey9TvliPEBwZA" behavior="_pQFqwHsBEey9TvliPEBwZA"/>
+        </ownedBehavior>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_qGi5AHr-Eey9TvliPEBwZA" name="start -> ActivitySkin" target="_dpMAcHr-Eey9TvliPEBwZA" source="_ikegpXr8Eey9TvliPEBwZA"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_qfTXQHr-Eey9TvliPEBwZA" name="ActivitySkin -> final" target="_ikegpnr8Eey9TvliPEBwZA" source="_dpMAcHr-Eey9TvliPEBwZA"/>
+        <node xmi:type="uml:InitialNode" xmi:id="_ikegpXr8Eey9TvliPEBwZA" name="start" outgoing="_qGi5AHr-Eey9TvliPEBwZA"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_ikegpnr8Eey9TvliPEBwZA" name="final" incoming="_qfTXQHr-Eey9TvliPEBwZA"/>
+        <node xmi:type="uml:CallBehaviorAction" xmi:id="_dpMAcHr-Eey9TvliPEBwZA" name="ActivitySkin" incoming="_qGi5AHr-Eey9TvliPEBwZA" outgoing="_qfTXQHr-Eey9TvliPEBwZA" behavior="_q28bMHr-Eey9TvliPEBwZA"/>
+      </packagedElement>
+      <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_5rx98Hr9Eey9TvliPEBwZA">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_5r2PYHr9Eey9TvliPEBwZA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="http://www.iils.de/dc43/profile/dc43Utilities/v0#/"/>
+        </eAnnotations>
+        <appliedProfile xmi:type="uml:Profile" href="pathmap://UTILITY_PROFILE/dc43Utilities.profile.uml#_U1HE8Fy0Ed6NvKf1SxOu9A"/>
+      </profileApplication>
+    </packagedElement>
+  </uml:Model>
+  <dc43Utilities:javaRule xmi:id="_m36DYHzDEe2rGf9dwFJ55Q" rule="CreateSkin" base_OpaqueAction="_m3jeEHzDEe2rGf9dwFJ55Q"/>
+</xmi:XMI>

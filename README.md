@@ -1,5 +1,7 @@
 # Parametrische-CAD-Modellierung
 
+Modell entwickelt im [Design Cockpit 43](https://www.iils.de/de/)
+
 Durchg Vorgabe verschiedener Parameter können jeweilige Variationen der Rumpfhautgeometrie generiert werden.
 
 ![image](https://github.com/user-attachments/assets/7ab4b71e-73ca-46ce-a68a-48a09a8c1ac4)
